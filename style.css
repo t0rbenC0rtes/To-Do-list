@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Agdasima";
+  background-color: #264653;
+}
+
+.container {
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+h1 {
+  margin: 75px auto;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #E9C46A;
+  letter-spacing: 0.3rem;
+}
+
+input {
+  padding: 5px 10px;
+  border-radius: 12px;
+  border: 4px solid #2A9D8F;
+  font-family: "Agdasima";
+  font-size: 1.5rem;
+}
+
+#add {
+  margin-left: 20px;
+  width: 4.5rem;
+  color: #E76F51;
+  background-color: #F4A261;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#add:hover {
+  cursor: pointer;
+}
+
+#todo {
+  min-width: 13rem;
+  color: #2A9D8F;
+}
+@media screen and (min-width: 786px) {
+  #todo {
+    min-width: 30rem;
+  }
+}
+#todo::placeholder {
+  color: #2A9D8F;
+}
+
+.inputContainer {
+  margin-bottom: 30px;
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.todoContainer {
+  display: flex;
+  margin-bottom: 10px;
+}
+.todoContainer p {
+  padding: 5px 10px;
+  border-radius: 12px;
+  border: 4px solid #2A9D8F;
+  font-family: "Agdasima";
+  font-size: 1.5rem;
+  width: 13rem;
+  color: #2A9D8F;
+  background-color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media screen and (min-width: 786px) {
+  .todoContainer p {
+    min-width: 30rem;
+  }
+}
+.todoContainer p:hover {
+  white-space: wrap;
+  text-overflow: none;
+}
+.todoContainer .delete {
+  margin-left: 1.25rem;
+  width: 4.5rem;
+  background-color: #E76F51;
+  font-weight: 300;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.todoContainer .delete:hover {
+  transform: scale(1.1);
+  background-color: #bd310f;
+}/*# sourceMappingURL=style.css.map */
